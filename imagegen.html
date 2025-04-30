@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Görsel Üretici</title>
+  <link rel="stylesheet" href="imagegen-style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Karaktere Göre Görsel Oluştur</h1>
+    <form id="imgForm">
+      <label>Karakter Adı: <input type="text" id="name" required></label><br>
+      <label>Açıklama (özellik, poz, kıyafet):<br>
+        <textarea id="desc" rows="3" required></textarea>
+      </label><br>
+      <button type="submit">Görsel Üret</button>
+    </form>
+    <div id="imageBox"></div>
+  </div>
+  <script src="imagegen-script.js"></script>
+</body>
+</html>

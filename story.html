@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Hikaye Motoru</title>
+  <link rel="stylesheet" href="story-style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Yeni Hikaye Oluştur</h1>
+    <form id="storyForm">
+      <label>Başlık: <input type="text" id="title" required></label><br>
+      <label>Karakter Seç (1): 
+        <select id="char1" required></select>
+      </label><br>
+      <label>Karakter Seç (2): 
+        <select id="char2" required></select>
+      </label><br>
+      <label>Tür:
+        <select id="type">
+          <option value="Romantik">Romantik</option>
+          <option value="Erotik">Erotik</option>
+          <option value="Rekabet">Rekabet</option>
+          <option value="Psikolojik">Psikolojik</option>
+          <option value="Mistisizm">Mistisizm</option>
+        </select>
+      </label><br>
+      <label>Açıklama:<br>
+        <textarea id="description" rows="4" cols="50" placeholder="Sahne detaylarını yaz..."></textarea>
+      </label><br>
+      <button type="submit">Senaryo Oluştur</button>
+    </form>
+    <div id="storyList">
+      <h2>Oluşturulmuş Hikayeler</h2>
+    </div>
+  </div>
+  <script src="story-script.js"></script>
+</body>
+</html>

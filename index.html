@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinsel Evren Giriş</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Evrene Giriş</h1>
+    <input type="password" id="pinInput" maxlength="4" placeholder="4 Haneli Giriş Kodu">
+    <button onclick="checkPIN()">Giriş Yap</button>
+    <p id="errorMsg"></p>
+  </div>
+
+  <div class="main-panel" style="display: none;">
+    <h2>Motor Seçimi</h2>
+    <div class="card-grid">
+      <div class="card" onclick="window.location.href='character.html'">
+        Karakter Motoru<br><small>Karakter oluştur</small>
+      </div>
+      <div class="card" onclick="window.location.href='character-list.html'">
+        Karakter Listesi<br><small>Görüntüle / Düzenle</small>
+      </div>
+      <div class="card" onclick="window.location.href='story.html'">
+        Hikaye Motoru<br><small>Sahne oluştur</small>
+      </div>
+      <div class="card" onclick="window.location.href='ai.html'">
+        AI Sahne Üretimi<br><small>GPT destekli</small>
+      </div>
+      <div class="card" onclick="window.location.href='imagegen.html'">
+        AI Görsel Üretimi<br><small>Karakter çizimi</small>
+      </div>
+      <div class="card" onclick="window.location.href='upload.html'">
+        Görselden Karakter<br><small>Yüz referansı</small>
+      </div>
+      <div class="card" onclick="window.location.href='export.html'">
+        Yedekleme / Geri Yükleme
+      </div>
+      <div class="card" onclick="window.location.href='settings.html'">
+        Ayarlar / Tema / Admin
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

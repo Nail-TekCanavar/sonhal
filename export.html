@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Veri Yedekleme</title>
+  <link rel="stylesheet" href="export-style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Veri Yedekleme & Yükleme</h1>
+    <button onclick="exportData()">Verileri JSON Olarak Dışa Aktar</button>
+    <br><br>
+    <input type="file" id="importFile">
+    <button onclick="importData()">JSON Dosyası Yükle ve Verileri Aktar</button>
+    <p id="resultMsg"></p>
+  </div>
+  <script src="export-script.js"></script>
+</body>
+</html>

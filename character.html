@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Karakter Oluştur</title>
+  <link rel="stylesheet" href="char-style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Karakter Oluştur</h1>
+    <form id="charForm">
+      <input type="hidden" id="editMode" value="">
+      <label>İsim: <input type="text" id="name" required></label><br>
+      <label>Yaş: <input type="number" id="age" required></label><br>
+      <label>Cinsiyet:
+        <select id="gender">
+          <option value="Kadın">Kadın</option>
+          <option value="Erkek">Erkek</option>
+          <option value="Akışkan">Akışkan</option>
+          <option value="Belirtmek istemiyorum">Belirtmek istemiyorum</option>
+        </select>
+      </label><br>
+      <label>Tercihler:<br>
+        <input type="checkbox" name="prefs" value="Hetero"> Hetero
+        <input type="checkbox" name="prefs" value="Homo"> Homo
+        <input type="checkbox" name="prefs" value="Bi"> Bi
+        <input type="checkbox" name="prefs" value="Pan"> Pan
+      </label><br>
+      <label>Fiziksel Özellikler:<br>
+        <input type="text" id="physique" placeholder="Boy, kilo, saç, ten...">
+      </label><br>
+      <label>Fanteziler / İlgi Alanları:<br>
+        <textarea id="interests" rows="4" cols="50"></textarea>
+      </label><br>
+      <button type="submit">Karakteri Kaydet</button>
+    </form>
+    <p id="statusMsg"></p>
+  </div>
+  <script src="char-script.js"></script>
+</body>
+</html>

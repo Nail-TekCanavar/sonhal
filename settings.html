@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ayarlar Paneli</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="settings-style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistem Ayarları</h1>
+    <section>
+      <h3>Tema Seçimi</h3>
+      <button onclick="setTheme('dark')">🌙 Koyu Tema</button>
+      <button onclick="setTheme('light')">☀️ Açık Tema</button>
+    </section>
+    <section>
+      <h3>Admin Kontrolü</h3>
+      <label>Admin PIN: <input type="password" id="adminPIN"></label>
+      <button onclick="activateAdmin()">Admin Girişi</button>
+      <p id="adminStatus"></p>
+    </section>
+    <section>
+      <h3>Dil Seçimi (Yakında)</h3>
+      <p>🌐 Türkçe ve Azərbaycanca desteği eklenecek</p>
+    </section>
+  </div>
+  <script src="settings-script.js"></script>
+</body>
+</html>

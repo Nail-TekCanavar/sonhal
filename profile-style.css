@@ -1,0 +1,16 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+.profile-container {
+  background-color: #222;
+  padding: 20px;
+  margin: auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #333;
+  text-align: left;
+}

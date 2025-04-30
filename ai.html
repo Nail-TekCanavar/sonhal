@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Destekli Sahne</title>
+  <link rel="stylesheet" href="ai-style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI ile Hikaye Oluştur</h1>
+    <form id="aiForm">
+      <label>Başlık: <input type="text" id="title" required></label><br>
+      <label>Karakter(ler): <input type="text" id="characters" placeholder="Ad1, Ad2" required></label><br>
+      <label>Tür:
+        <select id="type">
+          <option value="Romantik">Romantik</option>
+          <option value="Erotik">Erotik</option>
+          <option value="Psikolojik">Psikolojik</option>
+        </select>
+      </label><br>
+      <label>Sahne Açıklaması:<br>
+        <textarea id="prompt" rows="5"></textarea>
+      </label><br>
+      <button type="submit">AI'dan Hikaye Al</button>
+    </form>
+    <div id="output" class="result-box"></div>
+  </div>
+  <script src="ai-script.js"></script>
+</body>
+</html>
